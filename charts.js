@@ -119,14 +119,14 @@ function buildCharts(sample) {
     // Deliverable 2: 1. Create the trace for the bubble chart.
     var bubbleData = [
       {
-        x: topId,
-        y: svalues,
-        text: olabels,
+        x: oids,
+        y: result.sample_values,
+        text: result.otu_labels,
         mode: 'markers',
         marker: {
-          size: svalues,
+          size: result.sample_values,
           color: oids,
-          colorscale: "electric"
+          colorscale: "teal"
         }
       }
     ]
